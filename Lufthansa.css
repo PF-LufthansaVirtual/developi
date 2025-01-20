@@ -1,0 +1,892 @@
+@charset "utf-8";
+
+/* Allgemeines Layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+/* Header-Leiste */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #000E27;
+    padding: 0px 20px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    position: fixed;
+    z-index: 2;
+}
+
+/* Profilbild */
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('Fotos/Picture1.png');
+    background-size: cover;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Text neben dem Logo */
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.language-select,
+.lang-select {
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    background-color: #000E27;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 0 0 1em 0;
+    cursor: pointer;
+}
+
+.language-select {
+    padding: 10px 10px;
+}
+
+.lang-select {
+    text-align: center;
+    padding-top: 10px;
+    top: 143%;
+    transform: translateX(-100%);
+}
+
+.lang-select a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 7px 33.5px;
+}
+
+.langfix a:hover {
+    border-radius: 0 0 1em 0;
+}
+
+.lang-select a:hover {
+    background-color: #164068;
+}
+
+.menu {
+    font-size: 25px;
+    display: none;
+}
+
+.menustuff {
+    display: flex;
+}
+
+.Routesdash,
+.Staffdash,
+.discord {
+    margin-left: 100px;
+}
+
+#t_partteam {
+    margin-right: 35px;
+}
+
+/* Dropdown-Menü */
+.dropdown {
+    display: inline-block;
+    margin-left: auto;
+    padding: 25px 0;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #000E27;
+    min-width: 160px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 0 0 0 1em;
+    transition: transform 0.5s ease;
+}
+
+.dropdown:hover #dropdown-content-en,
+.dropdown:hover #dropdown-content-de {
+    transform: translate(0, 14%);
+    transition: transform 0.5s ease;
+}
+
+#dropdown-content-en {
+    transform: translate(125%, 13%);
+}
+
+#dropdown:hover #dropdown-content-en {
+    transform: translate(-7%, 14.5%);
+}
+
+#dropdown-content-de {
+    transform: translate(125%, 14.5%);
+}
+
+.dropdown:hover #dropdown-content-de {
+    transform: translate(10%, 14.5%);
+}
+
+.dropdownfix a:hover {
+    border-radius: 0 0 0 1em;
+}
+
+#dropdown-content-en a,
+#dropdown-content-de a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdown-content-en a:hover,
+#dropdown-content-de a:hover {
+    background-color: #164068;
+}
+
+/* Button mit Schatten */
+.join-button {
+    background-color: #000E27;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+    border-radius: 1em 1em 1em 1em;
+    position: fixed;
+}
+
+.join-button:hover {
+    background-color: #164068;
+}
+
+/* Hintergrundbild */
+.hero {
+    background-image: url('Fotos/Picture2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 91.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.hero_Routes {
+    background-image: url('Fotos/Picture2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+/* Abschnitt mit schwarzem Hintergrund */
+.black-section {
+    background-color: #000E27;
+    padding: 10px 20px;
+    text-align: center;
+    padding-bottom: 100px; /* Erweiterung nach unten */
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Neues Bild linksbündig */
+.image-text-left {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    justify-content: flex-start;
+    padding-left: 20px; /* Etwas Abstand für das Bild und den Text */
+}
+
+.image-text-left img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.image-text-left .text {
+    max-width: 600px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.faqpilot,
+.faqstart {
+    background-color: #164068;
+    padding: 20px;
+    margin: auto;
+    width: 700px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faqpilot {
+    margin-bottom: 0;
+    border-radius: 1em 1em 0 0;
+    border-bottom: 1px solid white;
+}
+
+.faqstart {
+    margin-top: 0;
+    margin-bottom: 100px;
+    border-radius: 0 0 1em 1em;
+    border-top: 1px solid white;
+}
+
+.faqpilot2,
+.faqstart2 {
+    display: none;
+    margin-top: 10px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+
+.CEO,
+.COO,
+.DOO {
+    background-color: #164068;
+    padding: 30px;
+    padding-top: 10px;
+    margin: 30px;
+    margin-bottom: 100px;
+    border-radius: 1em 1em 1em 1em;
+    width: 350px;
+    height: 205px;
+    text-align: left;
+}
+
+.contacts a{
+    background-color: #10304E;
+    padding: 15px;
+    margin: 0px;
+    margin-top: 20px;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    border: 2px solid white;
+}
+
+.contacts a:hover {
+    background-color: #575757;
+}
+
+.trusted img{
+    max-height: 65px;
+    margin: 20px;
+    border-radius: 1em 1em 1em 1em;
+}
+
+.Routes {
+    position: fixed;
+    background-color: #000E27;
+    border: 2px solid white;
+    border-right: 0px solid white;
+    top: 15%;
+    right: 0%;
+    border-radius: 2em 0.5em 0.5em 2em;
+    width: 95%;
+    height: 80vh;
+    text-align: center;
+    overflow: auto;
+}
+
+.Routes::-webkit-scrollbar {
+    width: 10px;
+}
+
+.Routes::-webkit-scrollbar-thumb {
+    background: #000E55;
+    border-radius: 10px;
+}
+
+.Routes::-webkit-scrollbar-thumb:hover {
+    background: #10304E;
+}
+
+.Routes::-webkit-scrollbar-track {
+    background: #164068;
+    border-radius: 10px;
+}
+
+.allerouten,
+.lufthansagroup,
+.aeropoints {
+    background-color: #10304E;
+    border-radius: 1em 1em 1em 1em;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+}
+
+.long,
+.middle,
+.short {
+    background-color: #164068;
+    border-radius: 1em 1em 1em 1em;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+}
+
+.Route1,
+.Route2,
+.Route3,
+.Route4,
+.Route5,
+.Route6,
+.Route7,
+.Route8,
+.Route9,
+.Route10,
+.Route11,
+.Route12,
+.Route13,
+.Route14,
+.Route15,
+.Route16,
+.Route17,
+.Route18,
+.Route19,
+.Route20,
+.Route21,
+.Route22,
+.Route23,
+.Route24,
+.Route25,
+.Route26,
+.Route27,
+.Route28,
+.Route29,
+.Route30,
+.Route31,
+.Route32,
+.Route33,
+.Route34,
+.Route35,
+.Route36,
+.Route37,
+.Route38,
+.Lufthansagroup,
+.Aeropoints {
+    background-color: #10304E;
+    border-radius: 1em 1em 1em 1em;
+    padding: 25px;
+    margin: 20px 10px;
+    text-align: left;
+}
+
+.Lufthansagroup,
+.Aeropoints {
+    background-color: #164068;
+    display: none;
+}
+
+.long2,
+.middle2,
+.short2 {
+    display: none;
+}
+
+.Route1 img,
+.Route2 img,
+.Route3 img,
+.Route4 img,
+.Route5 img,
+.Route6 img,
+.Route7 img,
+.Route8 img,
+.Route9 img,
+.Route10 img,
+.Route11 img,
+.Route12 img,
+.Route13 img,
+.Route14 img,
+.Route15 img,
+.Route16 img,
+.Route17 img,
+.Route18 img,
+.Route19 img,
+.Route20 img,
+.Route21 img,
+.Route22 img,
+.Route23 img,
+.Route24 img,
+.Route25 img,
+.Route26 img,
+.Route27 img,
+.Route28 img,
+.Route29 img,
+.Route30 img,
+.Route31 img,
+.Route32 img,
+.Route33 img,
+.Route34 img,
+.Route35 img,
+.Route36 img,
+.Route37 img,
+.Route38 img {
+    position: absolute;
+    height: 90px;
+    right: 6%;
+    transform: translateY(-73.5px);
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    cursor: pointer;
+}
+
+#Route1-2,
+#Route2-2,
+#Route3-2,
+#Route4-2,
+#Route5-2,
+#Route6-2,
+#Route7-2,
+#Route8-2,
+#Route9-2,
+#Route10-2,
+#Route11-2,
+#Route12-2,
+#Route13-2,
+#Route14-2,
+#Route15-2,
+#Route16-2,
+#Route17-2,
+#Route18-2,
+#Route19-2,
+#Route20-2,
+#Route21-2,
+#Route22-2,
+#Route23-2,
+#Route24-2,
+#Route25-2,
+#Route26-2,
+#Route27-2,
+#Route28-2,
+#Route29-2,
+#Route30-2,
+#Route31-2,
+#Route32-2,
+#Route33-2,
+#Route34-2,
+#Route35-2,
+#Route36-2,
+#Route37-2,
+#Route38-2 {
+    position: fixed;
+    height: 700px;
+    border-radius: 2em 2em 2em 2em;
+    cursor: pointer;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+@media only screen and (min-width: 601px) {
+    .staffstuff {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        height: 75vh;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #000E27;
+        border-radius: 2em 2em 2em 2em;
+    }
+
+    .staffstuff img {
+        width: 800px;
+        border-radius: 1em 1em 1em 1em;
+    }
+
+    .design,
+    .development,
+    .marketing,
+    .event {
+        width: 93.5%;
+        padding: 20px;
+        height: 70.5vh;
+    }
+
+    .development,
+    .marketing,
+    .event {
+        display: none;
+    }
+
+    .design {
+        border: 2px solid white;
+        border-radius: 2em 0 0 2em;
+    }
+
+    .development {
+        border: 2px solid white;
+        border-left: 0;
+    }
+
+    .marketing {
+        border: 2px solid white;
+        border-left: 0;
+    }
+
+    .event {
+        border: 2px solid white;
+        border-left: 0;
+        border-radius: 0 2em 2em 0;
+    }
+
+    .design2,
+    .development2,
+    .marketing2,
+    .event2 {
+        width: 2.5%;
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 0;
+        height: 70.5vh;
+        margin: 0;
+    }
+
+    .design2 {
+        display: none;
+    }
+
+    .design2 {
+        border: 2px solid white;
+        border-radius: 1em 0 0 1em;
+    }
+
+    .development2 {
+        border: 2px solid white;
+        border-left: 0;
+    }
+
+    .marketing2 {
+        border: 2px solid white;
+        border-left: 0;
+    }
+
+    .event2 {
+        border: 2px solid white;
+        border-left: 0;
+        border-radius: 0 1em 1em 0;
+    }
+
+    .code {
+        background-color: rgb(22, 24, 32);
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 1em 1em 1em 1em;
+        width: 800px;
+    }
+
+    .staffstuff a {
+        background-color: #10304E;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 0.5em 0.5em 0.5em 0.5em;
+    }
+
+    .staffstuff a:hover {
+        background-color: #164068;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        width: 96%;
+        height: 100px;
+        padding-right: 0;
+    }
+    
+    .hero {
+        height: 83.5vh;
+    }
+    
+    /* Profilbild */
+    #logo {
+        margin-right: 0px;
+        transform: translate(-20%);
+        min-width: 50px;
+    }
+
+    /* Text neben dem Logo */
+    .logo-text {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .language-select,
+    .lang-select {
+        position: absolute;
+        left: 0%;
+        top: 100%;
+        background-color: #000E27;
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+        border-radius: 0 0 1em 0;
+        cursor: pointer;
+    }
+    
+    .language-select {
+        min-width: 63px;
+        padding: 10px 8.5px;
+    }
+    
+    .menu {
+        display: block;
+        margin-right: 30px;
+    }
+    
+    .Routesdash,
+    .Staffdash,
+    .discord {
+        font-size: 15px;
+        margin: 0;
+    }
+    
+    .menustuff {
+        display: none;
+        left: 32.5%;
+        top: 99.5%;
+        position: absolute;
+        background-color: #000E27;
+        padding: 25px;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-radius: 0 0 1em 1em;
+        border: 2px solid white;
+        border-top: 0 solid white;
+    }
+    
+    #t_partteam {
+        font-size: 15px;
+        margin-right: 0;
+    }
+    
+    .language-select {
+        top: 99.5%;
+    }
+
+    .lang-select {
+        text-align: center;
+        padding-top: 10px;
+        top: 130%;
+        transform: translateX(-100%);
+    }
+    
+    #dropdown-content-en {
+        transform: translate(125%, 16%);
+    }
+    
+    .dropdown:hover #dropdown-content-en {
+        transform: translate(-20%, 16%);
+    }
+    
+    #dropdown-content-de {
+        transform: translate(125%, 17%);
+    }
+    
+    .dropdown:hover #dropdown-content-de {
+        transform: translate(-15%, 17%);
+    }
+    
+    .image-text-left {
+        display: block;
+    }
+
+    .image-text-left img {
+        width: 95%;
+    }
+
+    .image-text-left .text {
+        max-width: 90%;
+        font-size: 18px;
+    }
+    
+    .faqpilot,
+    .faqstart {
+        width: 80%;
+    }
+    
+    .contacts {
+        display: block;
+    }
+    
+    .CEO,
+    .COO,
+    .DOO {
+        width: 70%;
+    }
+    
+    .Routes {
+        min-width: 90%;
+        height: 70vh;
+        top: 18%;
+    }
+    
+    .Route1 img,
+    .Route2 img,
+    .Route3 img,
+    .Route4 img,
+    .Route5 img,
+    .Route6 img,
+    .Route7 img,
+    .Route8 img,
+    .Route9 img,
+    .Route10 img,
+    .Route11 img,
+    .Route12 img,
+    .Route13 img,
+    .Route14 img,
+    .Route15 img,
+    .Route16 img,
+    .Route17 img,
+    .Route18 img,
+    .Route19 img,
+    .Route20 img,
+    .Route21 img,
+    .Route22 img,
+    .Route23 img,
+    .Route24 img,
+    .Route25 img,
+    .Route26 img,
+    .Route27 img,
+    .Route28 img,
+    .Route29 img,
+    .Route30 img,
+    .Route31 img,
+    .Route32 img,
+    .Route33 img,
+    .Route34 img,
+    .Route35 img,
+    .Route36 img,
+    .Route37 img,
+    .Route38 img {
+        position: relative;
+        transform: translate(0, 10px);
+    }
+    
+    #Route1-2,
+    #Route2-2,
+    #Route3-2,
+    #Route4-2,
+    #Route5-2,
+    #Route6-2,
+    #Route7-2,
+    #Route8-2,
+    #Route9-2,
+    #Route10-2,
+    #Route11-2,
+    #Route12-2,
+    #Route13-2,
+    #Route14-2,
+    #Route15-2,
+    #Route16-2,
+    #Route17-2,
+    #Route18-2,
+    #Route19-2,
+    #Route20-2,
+    #Route21-2,
+    #Route22-2,
+    #Route23-2,
+    #Route24-2,
+    #Route25-2,
+    #Route26-2,
+    #Route27-2,
+    #Route28-2,
+    #Route29-2,
+    #Route30-2,
+    #Route31-2,
+    #Route32-2,
+    #Route33-2,
+    #Route34-2,
+    #Route35-2,
+    #Route36-2,
+    #Route37-2,
+    #Route38-2 {
+        width: 100%;
+        height: auto;
+    }
+    
+    .staffstuff {
+        position: fixed;
+        width: 100%;
+        height: 80%;
+        top: 20%;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    
+    .design,
+    .development,
+    .marketing,
+    .event {
+        background-color: #000E27;
+        padding: 20px;
+        padding-bottom: 40px;
+        width: 80%;
+        margin: 20px;
+        border-radius: 2em 2em 2em 2em;
+        border: 2px solid white;
+    }
+    
+    .code {
+        background-color: rgb(22, 24, 32);
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 1em 1em 1em 1em;
+        width: 90%;
+    }
+    
+    .staffstuff img {
+        width: 100%;
+        border-radius: 1em 1em 1em 1em;
+    }
+    
+    .staffstuff a {
+        background-color: #10304E;
+        padding: 15px;
+        border-radius: 0.5em 0.5em 0.5em 0.5em;
+    }
+    
+    .design2,
+    .development2,
+    .marketing2,
+    .event2 {
+        display: none;
+    }
+}
