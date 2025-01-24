@@ -162,23 +162,36 @@ document.addEventListener("DOMContentLoaded", function() {
             t_staff_event_info: "Du willst Teil des Teams zu sein und Events zu erstellen so wie zu handeln?",
             t_staff_event_apply: "Bewerben Sie sich dafür",
         },
+        es: {
+            
+        },
     };
 
     function setLanguage(lang) {
         var langen = document.getElementById('lang-en');
         var langde = document.getElementById('lang-de');
+        var langes = document.getElementById('lang-es');
         var dropdown = document.querySelector('.dropdown-content');
         if(lang == 'en') {
+            langes.classList.remove('bold');
             langen.classList.add('bold');
             langde.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 EN ";
             
             if (dropdown) dropdown.id = 'dropdown-content-en';
             
-        }else if(lang == 'de') {
+        } else if(lang == 'de') {
+            langes.classList.remove('bold');
             langde.classList.add('bold');
             langen.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 DE ";
+
+            if (dropdown) dropdown.id = 'dropdown-content-de';
+        } else if(lang == 'es') {
+            langes.classList.add('bold');
+            langde.classList.remove('bold');
+            langen.classList.remove('bold');
+            document.getElementById('langsel').textContent = "🌐 ES ";
 
             if (dropdown) dropdown.id = 'dropdown-content-de';
         }
@@ -222,6 +235,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     document.getElementById('lang-de').addEventListener('click', function() {
         setLanguage('de');
+    });
+    document.getElementById('lang-es').addEventListener('click', function() {
+        setLanguage('es');
     });
 
     var open = false;
