@@ -55,7 +55,7 @@ header {
 
 .language-select {
     padding: 10px 10px;
-    min-width: 68.5px;
+    min-width: 70px;
 }
 
 .lang-select {
@@ -672,8 +672,9 @@ header {
     }
     
     .language-select {
-        min-width: 68.94px;
-        padding: 10px 8.5px;
+        text-align: center;
+        min-width: 85.94px;
+        padding: 10px 0px;
     }
     
     .menu {

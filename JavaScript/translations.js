@@ -165,32 +165,47 @@ document.addEventListener("DOMContentLoaded", function() {
         es: {
             
         },
+        ru: {
+            
+        },
     };
 
     function setLanguage(lang) {
         var langen = document.getElementById('lang-en');
         var langde = document.getElementById('lang-de');
+        var langru = document.getElementById('lang-ru');
         var langes = document.getElementById('lang-es');
         var dropdown = document.querySelector('.dropdown-content');
         if(lang == 'en') {
-            langes.classList.remove('bold');
             langen.classList.add('bold');
             langde.classList.remove('bold');
+            langru.classList.remove('bold');
+            langes.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 EN ";
             
             if (dropdown) dropdown.id = 'dropdown-content-en';
             
         } else if(lang == 'de') {
-            langes.classList.remove('bold');
-            langde.classList.add('bold');
             langen.classList.remove('bold');
+            langde.classList.add('bold');
+            langru.classList.remove('bold');
+            langes.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 DE ";
 
             if (dropdown) dropdown.id = 'dropdown-content-de';
-        } else if(lang == 'es') {
-            langes.classList.add('bold');
-            langde.classList.remove('bold');
+        } else if(lang == 'ru') {
             langen.classList.remove('bold');
+            langde.classList.remove('bold');
+            langru.classList.add('bold');
+            langes.classList.remove('bold');
+            document.getElementById('langsel').textContent = "🌐 RU ";
+
+            if (dropdown) dropdown.id = 'dropdown-content-de';
+        } else if(lang == 'es') {
+            langen.classList.remove('bold');
+            langde.classList.remove('bold');
+            langru.classList.remove('bold');
+            langes.classList.add('bold');
             document.getElementById('langsel').textContent = "🌐 ES ";
 
             if (dropdown) dropdown.id = 'dropdown-content-de';
@@ -235,6 +250,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     document.getElementById('lang-de').addEventListener('click', function() {
         setLanguage('de');
+    });
+    document.getElementById('lang-ru').addEventListener('click', function() {
+        setLanguage('ru');
     });
     document.getElementById('lang-es').addEventListener('click', function() {
         setLanguage('es');
