@@ -162,6 +162,87 @@ document.addEventListener("DOMContentLoaded", function() {
             t_staff_event_info: "Du willst Teil des Teams zu sein und Events zu erstellen so wie zu handeln?",
             t_staff_event_apply: "Bewerben Sie sich dafür",
         },
+        fr: {
+            t_logo_text: "PF Lufthansa Virtual",
+            t_routes: "Itinéraires",
+            t_staff: "Équipe",
+            t_login: "Connexion (Hors service)",
+            t_partteam: "Faites partie de l'équipe",
+            t_event: "Équipe d'événements",
+            t_design: "Équipe de design",
+            t_marketing: "Équipe marketing",
+            t_dev: "Équipe de développement",
+            join: "REJOIGNEZ MAINTENANT",
+            t_infos: "↓ Plus d'informations ↓",
+            t_info_head: "À propos de nous",
+            t_info_pf_1: "PF Lufthansa Virtual connecte les passionnés d'aviation du monde entier, offrant une expérience de vol réaliste et une communauté dynamique.",
+            t_info_pf_2: "Des débutants aux pilotes expérimentés, nous offrons des opportunités de développement des compétences, de travail d'équipe et d'aventures passionnantes.",
+            t_routes_head: "Itinéraires",
+            t_routes_pf_1: "Notre réseau comprend une variété de vols courts, moyens et long-courriers à travers Project Flight, avec un large choix d'avions et de compagnies aériennes. Nous avons conçu les itinéraires pour qu'ils soient aussi réalistes et agréables que possible.",
+            t_routes_pf_2: "N'hésitez pas à explorer n'importe quel itinéraire à votre convenance, tant que vous sélectionnez un avion approuvé et une compagnie du groupe Lufthansa. Pour plus d'informations sur nos itinéraires...",
+            t_routes_pf_click: "Cliquez ici",
+            t_private_server: "Serveur privé",
+            t_private_server_info: "Découvrez notre serveur exclusif réservé aux membres.",
+            t_server_details: "Notre serveur privé prend actuellement en charge jusqu'à 20 joueurs, mais des plans sont déjà en cours pour augmenter sa capacité à l'avenir. Découvrez tous les détails nécessaires pour rejoindre et faire partie de cette expérience exclusive.",
+            t_server_id: "ID du serveur : 2yiVc8MUVZ",
+            t_server_pass: "Mot de passe : Lufthansa",
+            t_staff_team: "Équipe de personnel",
+            t_staff_info: "Rencontrez nos membres du personnel dédiés et compétents qui garantissent des opérations fluides.",
+            t_staff_apply: "Intéressé à rejoindre notre personnel ? Postulez maintenant pour faire partie de notre équipe.",
+            t_faq: "Questions fréquentes",
+            t_faq_pilot: "Comment devenir pilote ?",
+            t_faq_pilot_info: "Vous n'avez pas besoin de postuler ! Vous pouvez simplement commencer à voler et enregistrer vos vols sur le serveur.",
+            t_faq_start: "Commencer",
+            t_faq_start_info: "Regardez la vidéo sur notre chaîne Youtube Lufthansa Virtual",
+            t_contacts: "Contactez-nous",
+            t_ceo: "PDG",
+            t_ceo_contact: "Contactez notre PDG pour toute question liée au leadership",
+            t_ceo_contact_name: "Discord : bananensammler_",
+            t_ceo_contact_discord: "Ou ici",
+            t_coo: "COO",
+            t_coo_contact: "Contactez notre COO pour des préoccupations opérationnelles.",
+            t_coo_contact_name: "Discord : itstim0904",
+            t_coo_contact_discord: "Ou ici",
+            t_doo: "DOO",
+            t_doo_contact: "Contactez notre DOO pour des informations sur les opérations quotidiennes.",
+            t_doo_contact_name: "Discord : theotittler",
+            t_doo_contact_discord: "Ou ici",
+            t_trusted: "Approuvé par les principales communautés d'aviation.",
+
+            t_route_head: "Itinéraires",
+            t_route_route_head: "Itinéraires et plans de vol",
+            t_route_route_long: "Long-courrier",
+            t_route_route_middle: "Moyen-courrier",
+            t_route_route_short: "Court-courrier",
+            t_route_group_header: "Groupe Lufthansa",
+            t_route_group_info: "Vous ne pouvez voler qu'avec des compagnies du groupe Lufthansa, car nous sommes Lufthansa Virtual et nous voulons que votre expérience de vol soit aussi réaliste que possible dans notre compagnie aérienne virtuelle. Pour cette raison, nous vous demandons de voler uniquement avec des compagnies du groupe Lufthansa.",
+            t_route_group_list: "Le groupe Lufthansa comprend :",
+            t_route_points_header: "Aéropoints",
+            t_route_points_info: "Pour chacun de vos vols, dans lequel vous avez suivi l'un des itinéraires donnés avec l'un des avions autorisés et une compagnie du groupe Lufthansa, et l'avez enregistré ",
+            t_route_points_info2: "SUR CE SITE",
+            t_route_points_info3: " vous gagnez des Aéropoints. Vous les obtenez également si vous gagnez un événement. Vous pouvez également voir vos vols enregistrés et ceux des autres, ainsi que le nombre de points attribués ",
+            t_route_points_info4: "SUR CE SITE",
+            t_route_points_how: "Le nombre de points que vous obtenez dépend de l'itinéraire que vous suivez et si vous avez utilisé le plan de vol donné. Voici comment les points sont calculés :",
+            t_route_points_how2: "- Long-courrier : 75 + 15 avec plan de vol",
+            t_route_points_how3: "- Moyen-courrier : 50 + 15 avec plan de vol",
+            t_route_points_how4: "- Court-courrier : 25 + 15 avec plan de vol",
+            t_route_points_roles: "En fonction du nombre d'Aéropoints que vous avez, vous obtiendrez différents rôles sur notre serveur Discord. Voici les rôles et le nombre de points nécessaires :",
+
+            t_staff_design_head: "🎨 Équipe de design",
+            t_staff_design_info: "Vous souhaitez aider notre équipe en créant des images et des matériaux pour les publicités, ainsi qu'en gérant d'autres tâches importantes sur le serveur ?",
+            t_staff_design_apply: "Postulez",
+            t_staff_development_head: "⚒️ Équipe de développement",
+            t_staff_development_info: "Vous souhaitez voir notre serveur évoluer avec le temps et participer à donner vie aux idées ? Rejoignez maintenant",
+            t_staff_development_info2: "Aucune compétence en codage requise !",
+            t_staff_development_apply: "Postulez",
+            t_staff_marketing_head: "🥂 Équipe marketing",
+            t_staff_marketing_info: "Vous voulez faire partie de l'équipe, créer des publicités pour nous et communiquer avec nos partenaires ?",
+            t_staff_marketing_info2: "Aidez-nous à faire grandir notre communauté !",
+            t_staff_marketing_apply: "Postulez",
+            t_staff_event_head: "🏝️ Équipe d'événements",
+            t_staff_event_info: "Vous souhaitez faire partie de l'équipe, créer et gérer des événements ?",
+            t_staff_event_apply: "Postulez",
+        },
         es: {
             t_logo_text: "PF Lufthansa Virtual",
             t_routes: "Rutas",
@@ -328,12 +409,14 @@ document.addEventListener("DOMContentLoaded", function() {
         var langen = document.getElementById('lang-en');
         var langde = document.getElementById('lang-de');
         var langru = document.getElementById('lang-ru');
+        var langfr = document.getElementById('lang-fr');
         var langes = document.getElementById('lang-es');
         var dropdown = document.querySelector('.dropdown-content');
         if(lang == 'en') {
             langen.classList.add('bold');
             langde.classList.remove('bold');
             langru.classList.remove('bold');
+            langfr.classList.remove('bold');
             langes.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 EN ";
             
@@ -343,6 +426,7 @@ document.addEventListener("DOMContentLoaded", function() {
             langen.classList.remove('bold');
             langde.classList.add('bold');
             langru.classList.remove('bold');
+            langfr.classList.remove('bold');
             langes.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 DE ";
 
@@ -351,14 +435,25 @@ document.addEventListener("DOMContentLoaded", function() {
             langen.classList.remove('bold');
             langde.classList.remove('bold');
             langru.classList.add('bold');
+            langfr.classList.remove('bold');
             langes.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 RU ";
 
             if (dropdown) dropdown.id = 'dropdown-content-ru';
+        } else if(lang == 'fr') {
+            langen.classList.remove('bold');
+            langde.classList.remove('bold');
+            langru.classList.remove('bold');
+            langfr.classList.add('bold');
+            langes.classList.remove('bold');
+            document.getElementById('langsel').textContent = "🌐 FR ";
+
+            if (dropdown) dropdown.id = 'dropdown-content-es';
         } else if(lang == 'es') {
             langen.classList.remove('bold');
             langde.classList.remove('bold');
             langru.classList.remove('bold');
+            langfr.classList.remove('bold');
             langes.classList.add('bold');
             document.getElementById('langsel').textContent = "🌐 ES ";
 
@@ -407,6 +502,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     document.getElementById('lang-ru').addEventListener('click', function() {
         setLanguage('ru');
+    });
+    document.getElementById('lang-fr').addEventListener('click', function() {
+        setLanguage('fr');
     });
     document.getElementById('lang-es').addEventListener('click', function() {
         setLanguage('es');
