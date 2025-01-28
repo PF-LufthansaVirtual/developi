@@ -758,7 +758,7 @@ header {
         padding-top: 10px;
         top: 130%;
         transform: translateX(-100%);
-        width: 95px;
+        width: 92.5px;
     }
     
     #dropdown-content-en {
@@ -770,35 +770,35 @@ header {
     }
     
     #dropdown-content-de {
-        transform: translate(125%, 18%);
+        transform: translate(125%, 17.9%);
     }
     
     .dropdown:hover #dropdown-content-de {
-        transform: translate(-20%, 18%);
+        transform: translate(-20%, 117.9%);
     }
     
     #dropdown-content-ru {
-        transform: translate(125%, 12%);
+        transform: translate(125%, 12.5%);
     }
     
     .dropdown:hover #dropdown-content-ru {
-        transform: translate(-26%, 12%);
+        transform: translate(-26%, 12.5%);
     }
     
     #dropdown-content-fr {
-        transform: translate(125%, 15.5%);
+        transform: translate(125%, 14.5%);
     }
     
     .dropdown:hover #dropdown-content-fr {
-        transform: translate(-21%, 15.5%);
+        transform: translate(-21%, 14.5%);
     }
     
     #dropdown-content-es {
-        transform: translate(125%, 12%);
+        transform: translate(125%, 13%);
     }
     
     .dropdown:hover #dropdown-content-es {
-        transform: translate(-22%, 12%);
+        transform: translate(-22%, 13%);
     }
     
     .image-text-left {
