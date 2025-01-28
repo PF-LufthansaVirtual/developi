@@ -448,7 +448,7 @@ document.addEventListener("DOMContentLoaded", function() {
             langes.classList.remove('bold');
             document.getElementById('langsel').textContent = "🌐 FR ";
 
-            if (dropdown) dropdown.id = 'dropdown-content-es';
+            if (dropdown) dropdown.id = 'dropdown-content-fr';
         } else if(lang == 'es') {
             langen.classList.remove('bold');
             langde.classList.remove('bold');
