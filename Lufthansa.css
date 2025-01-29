@@ -706,7 +706,7 @@ header {
     
     .language-select {
         text-align: center;
-        min-width: 85.94px;
+        min-width: 85.7px;
         padding: 10px 0px;
     }
     
@@ -774,7 +774,7 @@ header {
     }
     
     .dropdown:hover #dropdown-content-de {
-        transform: translate(-20%, 117.9%);
+        transform: translate(-20%, 17.9%);
     }
     
     #dropdown-content-ru {
@@ -782,7 +782,7 @@ header {
     }
     
     .dropdown:hover #dropdown-content-ru {
-        transform: translate(-26%, 12.5%);
+        transform: translate(-26%, 12.4%);
     }
     
     #dropdown-content-fr {
@@ -790,7 +790,7 @@ header {
     }
     
     .dropdown:hover #dropdown-content-fr {
-        transform: translate(-21%, 14.5%);
+        transform: translate(-21%, 15%);
     }
     
     #dropdown-content-es {
